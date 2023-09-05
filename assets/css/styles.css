@@ -329,23 +329,51 @@ main .insights .progress .number {
     align-items: center;
 }
 
-/* .progress {
-    position: relative;
+main .insights small{
+    margin-top: 1.6rem;
+    display: block;
 }
 
-.progress svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: transparent;
-    stroke: var(--colour-primary); /* Adjust the color as needed */
+/*--Resent oders-*/
+
+main .recent-orders {
+    margin-top: 2rem;
+
 }
 
-/* .number {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem; /* Adjust the font size as needed */
-    color: var(--colour-primary); /* Adjust the color as needed */
-} */ */
+main .recent-orders h2 {
+    margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+    background: var(--colour-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+
+}
+
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--colour-light);
+    color: var(--colour-dark-variant);
+
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .recent-orders a {
+    text-align: center;
+     /* display: block; */
+    margin: 1rem auto;
+   color: var(--colour-primary);
+}
