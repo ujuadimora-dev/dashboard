@@ -7,7 +7,7 @@
     --colour-danger: #e9719f;
     --colour-success: hsl(147, 76%, 69%);
     --colour-warning: #d6d85d;
-    --colour-white: #a8a8ac;
+    --colour-white: #e3e3e9;
     --colour-info-dark: #acb2e4;
     --colour-info-light: #c5c6ce;
     --colour-dark: #d5d5db;
@@ -133,7 +133,7 @@ aside {
  aside .top{
     background: white;
     display: flex;
-    align-item: center;
+    align-items: center;
     justify-content: space-between;
     margin-top: 1.4rem;
 
@@ -165,18 +165,18 @@ aside {
 
  aside .sidebar a{
     display: flex;
-    color: var(--colour.info-dark);
+    color: var(--colour-info-dark);
     margin-left: 2rem;
     gap: 1rem;
     align-items: center;
     position: relative;
     height: 3.7rem;
-    transistion: all 300ms ease;
+    transition: all 300ms ease;
  }
 
  aside .sidebar a span {
     font-size: 1.6rem;
-    transistion: all 300ms ease;
+   transform: all 300ms;
 }
 
 aside .sidebar a:last-child {
@@ -187,7 +187,7 @@ aside .sidebar a:last-child {
 
 aside .sidebar a.active {
     background: var(--colour-light);
-    color: var(--colour-primary);'
+    color: var(--colour-primary);
     margin-left: 0;
 }
 
@@ -214,3 +214,138 @@ aside .sidebar .message-count {
     font-size: 11px;
     border-radius: var(--border-radius-1);
 }
+
+/* main here*/
+
+main{ 
+    margin-top: 1.4rem;
+}
+
+main .date {
+    display: inline-block;
+    background: var(--colour-light);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main .date input[type="date"]{
+    background: transparent;
+    color: var(--colour-dark);
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+main .insights > div {
+    background: var(--colour-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .insights > div:hover  {
+    box-shadow: none;
+
+}
+main .insights > div span{
+    background-color: var(--colour-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--colour-white);
+    font-size: 2rem;
+}
+
+main .insights > div.expenses span {
+    background: var(--colour-danger);
+}
+main .insights > div.income span {
+    background: var(--colour-success);
+}
+
+main .insights > div .middle {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+main .insights h3 {
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;   
+}
+
+main .insights .progress {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+main .insights svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights svg circle{
+    fill: none;
+    stroke: var(--colour-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform:  translate(5px, 5px);
+    stroke-dasharray:110;
+    stroke-dashoffset: 92;
+
+}
+main .insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+
+}
+
+main .insights .expenses svg circle{
+    stroke-dashoffset: 30;
+    stroke-dasharray: 90;
+    
+}
+main .insights .income svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+    
+}
+
+main .insights .progress .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .progress {
+    position: relative;
+}
+
+.progress svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: transparent;
+    stroke: var(--colour-primary); /* Adjust the color as needed */
+}
+
+/* .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: var(--colour-primary); /* Adjust the color as needed */
+} */ */

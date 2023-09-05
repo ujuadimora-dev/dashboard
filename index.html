@@ -19,80 +19,133 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <img src="assets/images/Picture1.png" alt="dashbord logo">
-                    <h2>DASH<span class="danger"></span>BOARD</h2>
+                    <img src="assets/images/Picture1.png" alt="dashboard logo">
+                    <h2>DASH<span class="danger">BOARD</span></h2>
                 </div>
-                <div class="close " id="close-btn">
-                    <span class="material-symbols-sharp"> close</span>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-sharp">close</span>
                 </div>
             </div>
-            <!-- markup for the side bar-->
+            <!-- markup for the sidebar -->
             <div class="sidebar">
                 <a href="#">
                     <span class="material-symbols-sharp">space_dashboard</span>
-                    <h3> Dashborad</h3>
+                    <h3>Dashboard</h3>
                 </a>
                 <a href="#" class="active">
-                    <span class="material-symbols-sharp ">
-                        group
-                    </span>
-                    <h3> Customers</h3>
+                    <span class="material-symbols-sharp">group</span>
+                    <h3>Customers</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        receipt_long
-                    </span>
-
+                    <span class="material-symbols-sharp">receipt_long</span>
                     <h3>Orders</h3>
                 </a>
                 <a href="#">
                     <span class="material-symbols-sharp">timeline</span>
-                    <h3> Analysis</h3>
+                    <h3>Analysis</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        mail
-                    </span>
+                    <span class="material-symbols-sharp">mail</span>
                     <h3>Messages</h3>
                     <span class="message-count">30</span>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        inventory
-                    </span>
-                    <h3>products</h3>
+                    <span class="material-symbols-sharp">inventory</span>
+                    <h3>Products</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        report
-                    </span>
+                    <span class="material-symbols-sharp">report</span>
                     <h3>Reports</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        manage_history
-                    </span>
-                    <h3> settings</h3>
+                    <span class="material-symbols-sharp">manage_history</span>
+                    <h3>Settings</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        add
-                    </span>
-                    <h3>Add products</h3>
+                    <span class="material-symbols-sharp">add</span>
+                    <h3>Add Products</h3>
                 </a>
                 <a href="#">
-                    <span class="material-symbols-sharp">
-                        logout
-                    </span>
-                    <h3>log out</h3>
+                    <span class="material-symbols-sharp">logout</span>
+                    <h3>Log Out</h3>
                 </a>
             </div>
         </aside>
+        <!-- End of Aside -->
+        <!-- Start of the main board -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-symbols-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$35.987</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                        </div>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Last 24hrs</small>
+                    </div>
+                </div>
+                <!-- Sales ended here -->
+                <div class="expenses">
+                    <span class="material-symbols-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$14.987</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                        </div>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Last 24hrs</small>
+                    </div>
+                </div>
+                <!-- Expenses ended here -->
+                <div class="income">
+                    <span class="material-symbols-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$356.987</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                        </div>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                    <div>
+                        <small class="text-muted">Last 24hrs</small>
+                    </div>
+                </div>
+                <!-- Income ended here -->
+            </div>
+        </main>
     </div>
-
-
-
-
+    
     <script src="./assets/js/script.js"></script>
 </body>
 
